@@ -8,8 +8,10 @@ jobs:
         uses: actions/checkout@main
       - name: install dependencies
         run: npm ci
+        working-directory: ./04 Practice Project (Start)
       - name: run lint
         run: npm run lint
+        working-directory: ./04 Practice Project (Start)
   test:
     runs-on: ubuntu-latest
     steps:
