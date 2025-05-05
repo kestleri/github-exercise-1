@@ -5,16 +5,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
-        uses: actions/checkout@master
+        uses: actions/checkout@main
       - name: run lint
-        run: npm lint
+        run: npm run lint
   test:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
         uses: actions/checkout@master
       - name: run tests
-        run: npm test
+        run: npm run test
   deploy:
     runs-on: ubuntu-latest
     steps:
