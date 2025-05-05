@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
-        uses: actions/checkout@master
+        uses: actions/checkout@main
       - name: run tests
         run: npm run test
   deploy:
@@ -23,7 +23,7 @@ jobs:
       - name: checkout code
         uses: actions/checkout@master
       - name: start deploy
-        run: npm build
+        run: npm run build
       - name: echo deploy
         run: echo "Starting deployment..."
 
